@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 //Carousel-pc//
 $(document).ready(function () {
-  var owl = $('.panel-left-top');
+  var owl = $('.owl-carousel');
   owl.owlCarousel({
     items: 1,
     autoplay: true,

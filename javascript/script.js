@@ -1,30 +1,30 @@
-
+// SCROLL window show icon back-up
 $(document).ready(function () {
-    var scrollTrigger = 400, // px
-      backToTop = function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > scrollTrigger) {
-          $('.back-top,.back-bottom').show();
-        } else {
-          $('.back-top,.back-bottom').hide();
-        }
-      };
+  var scrollTrigger = 400, // px
+    backToTop = function () {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        $('.back-top,.back-bottom').show();
+      } else {
+        $('.back-top,.back-bottom').hide();
+      }
+    };
+  backToTop();
+  $(window).on('scroll', function () {
     backToTop();
-    $(window).on('scroll', function () {
-      backToTop();
-    });
-    $('.back-top').on('click', function (e) {
-      e.preventDefault();
-      $('html,body').animate({
-        scrollTop: 0
-      }, 700);
-    });
-    $('.back-bottom').on('click', function (e) {
-      e.preventDefault();
-      $('html,body').animate({
-        scrollTop: document.body.scrollHeight
-      }, 700);
-    });
+  });
+  $('.back-top').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 700);
+  });
+  $('.back-bottom').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: document.body.scrollHeight
+    }, 700);
+  });
 });
 
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
   });
   $('.main-container , .footer-container').click(function () {
     $('.input-text').css({ "border": "none" });
-  });
+  }); 
 });
 
 

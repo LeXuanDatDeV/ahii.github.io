@@ -102,7 +102,7 @@ li{
 .menu-list-item>ul>li>a{
     text-decoration: none;
     color: #000;
-    font-size: 12px;
+    font-size: 10.5px;
 }
 .menu-list-item li a i{
     text-align: center;
@@ -111,6 +111,7 @@ li{
 .menu-list-item .menu-list li{
     list-style: none;
     padding: 6px 0;
+    position: relative;
 }
 .menu-list-item ul{
     display: flex;
@@ -120,9 +121,6 @@ li{
 .menu-list-item > .menu-list > li:hover{
     color: #fff; 
     background: #e11b1e;
-}
-.list{
-    position: relative;
 }
 .menu-list-item .menu-list .row{
     width: 382px;
@@ -271,9 +269,8 @@ li{
 
 /* ****SECTION-HEADER */
 .products-container img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
 }
 .section-header{
     width: 100%;
@@ -326,7 +323,7 @@ li{
 }
 .products-container .cols.cols-5 .col-category{
     background:#fff;
-    width: 20%;
+    width: 25%;
     border: 1px solid #eee;
     border-left: none;
     border-top: none;
@@ -344,7 +341,7 @@ li{
     margin: 14px auto 0px;
 }
 
-/* **********COL-CATEGORY *******8*/
+/* **********COL-CATEGORY ********/
 
 .col-category .products-img .giam-percent{
     position: absolute;
@@ -370,7 +367,6 @@ li{
     right: 15px;
     bottom: 0;
     width: 50px;
-    height: 50px;
 }
 .col-category .products-img .sticker-hotsale{
     position: absolute;
@@ -396,12 +392,18 @@ li{
     font-weight: 700;
     color: #fff;
 }
+.cols.cols-5 .col-category .products-info{
+    padding-left: 10px;
+}
 .cols.cols-5 .col-category .products-info,
 .cols.cols-5 .col-category .products-info a
 {
     width: 100%;
     background: #fff;
-    color: #000;
+    color: #393d3f;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration-color: #e11b1e;
 }
 .products-info .price-box{
     width: 100%;
@@ -425,11 +427,11 @@ li{
     width: 100%;
     background: #fff;
     display: flex;
+    padding-left: 10px;
 }
 .products-promotion .promotion-list{
     width: 43%;
     height: 40px;
-    margin-left: 5px;
 }
 
 .products-promotion .promotion-list .pmh-title{
@@ -482,7 +484,7 @@ li{
     color: #000;
     font-weight: 600;
 }
-/*  */
+/* ********THANH TOAN************ */
 .the_tin_dung{
     width: 100%;
 }
@@ -602,9 +604,7 @@ li{
     transition: opacity .2s ease-out;
     opacity: 1;
 }
-
-
-/* *************only-sp ******************/
+/* *************HEADER-SP ******************/
 .header-sp{
     height: 100%;
     display: flex;
@@ -649,6 +649,7 @@ li{
     align-items: center;
     justify-content: center;
 }
+/* ************MENU-SP*********** */
 .nav-container{
     position: absolute;
     height: 100vh;
@@ -659,13 +660,18 @@ li{
     overflow-y: scroll;
     box-sizing: border-box;
 }
+.nav-container .nav-wrapper{
+    background: #fff;
+    padding: 5px;
+    height: 45vh;
+}
 .nav-container #nav{
     width: 100%;
     height: 100vh;
 }
 .nav-container #nav li a{
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
     display: block;
     border:  solid 1px #eee;
     color:  #3c3d41;
@@ -675,6 +681,8 @@ li{
     padding: 3px;
     float: left;
 }
+/***********END******************* */
+
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next{
     position: absolute;

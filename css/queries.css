@@ -15,21 +15,6 @@
     max-width: 1200px;
     width: 100%;
 }
-.slide-sp{
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    /* display: block; */
-    z-index: 2;
-}
-.info-title{
-    width: 100%;
-    display: none;
-}
-.info{
-    position: relative;
-}
 /* menu-top-moblie */
 .menu-top-sp{
     width: 100%;
@@ -107,9 +92,6 @@
     .panel .panel-right .panel-right-top,.panel .panel-right .panel-right-bottom{
         margin-top: 0;
     }
-    /* .slide-sp{
-        display: block;
-    } */
     .menu-top-sp{
         display: block;
     }
@@ -154,7 +136,6 @@
     }
     .col-category .products-img .sticker,.sticker-hotsale{
         width: 42px;
-        height: 42px;
     }
     .col-category .products-img .tra-gop{
         width: 60px;
@@ -169,7 +150,7 @@
         height: auto;
     }
     .products-container .cols.cols-5 .col-category{
-        width: 33.3%;
+        width: 33.33%;
     }
     .section-header .section-header-list-left{
         width: 100%;
@@ -262,7 +243,6 @@
     }
     .col-category .products-img .sticker img, .sticker-hotsale img{
         width: 40px;
-        height: auto;
     }
     .footer{
         background: none;
@@ -301,7 +281,6 @@
     }
     .col-category .products-img .sticker img,.sticker-hotsale img{
         width: 35px;
-        height: auto;
     }
     .col-category .products-img .sticker{
         position: absolute;
@@ -349,7 +328,6 @@
     }
     .col-category .products-img .sticker img,.sticker-hotsale img{
         width: 35px;
-        height: auto;
     }
     .col-category .products-img .sticker{
         position: absolute;
@@ -382,6 +360,11 @@
     }
 }
 @media only screen and (max-width:320px){
+    .col-category .products-img .sticker {
+        position: absolute;
+        right: 5px;
+        bottom: -2px;
+    }
     .col-category .products-img .giam-percent {
         width: 30px;
         height: 30px;
@@ -393,7 +376,6 @@
     }
     .col-category .products-img .sticker img,.sticker-hotsale img{
         width: 30px;
-        height: auto;
     }
     .col-category .products-img .tra-gop{
         width: 46px;
